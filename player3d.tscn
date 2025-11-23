@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2wva4egsefr4"]
+
+[ext_resource type="Script" uid="uid://dqk3ksr0g1xvs" path="res://player.gd" id="1_1uune"]
+
+[node name="Main" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="Ground" type="MeshInstance3D" parent="."]
+
+[node name="Billboard" type="MeshInstance3D" parent="."]
+visibility_range_begin = 234.06
+visibility_range_end = 234.06
+
+[node name="VideoSteamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Player" type="CharacterBody3D" parent="."]
+script = ExtResource("1_1uune")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]

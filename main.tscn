@@ -1,0 +1,287 @@
+[gd_scene load_steps=3 format=3 uid="uid://7rd2tnb38uux"]
+
+[ext_resource type="Script" uid="uid://b2yqnga2ob06y" path="res://rps working.gd" id="1_ig7tw"]
+
+[sub_resource type="FontFile" id="FontFile_ig7tw"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/2/0/ascent = 0.0
+cache/0/2/0/descent = 0.0
+cache/0/2/0/underline_position = 0.0
+cache/0/2/0/underline_thickness = 0.0
+cache/0/2/0/scale = 1.0
+cache/0/3/0/ascent = 0.0
+cache/0/3/0/descent = 0.0
+cache/0/3/0/underline_position = 0.0
+cache/0/3/0/underline_thickness = 0.0
+cache/0/3/0/scale = 1.0
+cache/0/4/0/ascent = 0.0
+cache/0/4/0/descent = 0.0
+cache/0/4/0/underline_position = 0.0
+cache/0/4/0/underline_thickness = 0.0
+cache/0/4/0/scale = 1.0
+cache/0/5/0/ascent = 0.0
+cache/0/5/0/descent = 0.0
+cache/0/5/0/underline_position = 0.0
+cache/0/5/0/underline_thickness = 0.0
+cache/0/5/0/scale = 1.0
+cache/0/6/0/ascent = 0.0
+cache/0/6/0/descent = 0.0
+cache/0/6/0/underline_position = 0.0
+cache/0/6/0/underline_thickness = 0.0
+cache/0/6/0/scale = 1.0
+cache/0/7/0/ascent = 0.0
+cache/0/7/0/descent = 0.0
+cache/0/7/0/underline_position = 0.0
+cache/0/7/0/underline_thickness = 0.0
+cache/0/7/0/scale = 1.0
+cache/0/8/0/ascent = 0.0
+cache/0/8/0/descent = 0.0
+cache/0/8/0/underline_position = 0.0
+cache/0/8/0/underline_thickness = 0.0
+cache/0/8/0/scale = 1.0
+cache/0/9/0/ascent = 0.0
+cache/0/9/0/descent = 0.0
+cache/0/9/0/underline_position = 0.0
+cache/0/9/0/underline_thickness = 0.0
+cache/0/9/0/scale = 1.0
+cache/0/10/0/ascent = 0.0
+cache/0/10/0/descent = 0.0
+cache/0/10/0/underline_position = 0.0
+cache/0/10/0/underline_thickness = 0.0
+cache/0/10/0/scale = 1.0
+cache/0/20/0/ascent = 0.0
+cache/0/20/0/descent = 0.0
+cache/0/20/0/underline_position = 0.0
+cache/0/20/0/underline_thickness = 0.0
+cache/0/20/0/scale = 1.0
+cache/0/21/0/ascent = 0.0
+cache/0/21/0/descent = 0.0
+cache/0/21/0/underline_position = 0.0
+cache/0/21/0/underline_thickness = 0.0
+cache/0/21/0/scale = 1.0
+cache/0/22/0/ascent = 0.0
+cache/0/22/0/descent = 0.0
+cache/0/22/0/underline_position = 0.0
+cache/0/22/0/underline_thickness = 0.0
+cache/0/22/0/scale = 1.0
+cache/0/23/0/ascent = 0.0
+cache/0/23/0/descent = 0.0
+cache/0/23/0/underline_position = 0.0
+cache/0/23/0/underline_thickness = 0.0
+cache/0/23/0/scale = 1.0
+cache/0/24/0/ascent = 0.0
+cache/0/24/0/descent = 0.0
+cache/0/24/0/underline_position = 0.0
+cache/0/24/0/underline_thickness = 0.0
+cache/0/24/0/scale = 1.0
+cache/0/25/0/ascent = 0.0
+cache/0/25/0/descent = 0.0
+cache/0/25/0/underline_position = 0.0
+cache/0/25/0/underline_thickness = 0.0
+cache/0/25/0/scale = 1.0
+cache/0/26/0/ascent = 0.0
+cache/0/26/0/descent = 0.0
+cache/0/26/0/underline_position = 0.0
+cache/0/26/0/underline_thickness = 0.0
+cache/0/26/0/scale = 1.0
+cache/0/27/0/ascent = 0.0
+cache/0/27/0/descent = 0.0
+cache/0/27/0/underline_position = 0.0
+cache/0/27/0/underline_thickness = 0.0
+cache/0/27/0/scale = 1.0
+cache/0/28/0/ascent = 0.0
+cache/0/28/0/descent = 0.0
+cache/0/28/0/underline_position = 0.0
+cache/0/28/0/underline_thickness = 0.0
+cache/0/28/0/scale = 1.0
+cache/0/29/0/ascent = 0.0
+cache/0/29/0/descent = 0.0
+cache/0/29/0/underline_position = 0.0
+cache/0/29/0/underline_thickness = 0.0
+cache/0/29/0/scale = 1.0
+cache/0/30/0/ascent = 0.0
+cache/0/30/0/descent = 0.0
+cache/0/30/0/underline_position = 0.0
+cache/0/30/0/underline_thickness = 0.0
+cache/0/30/0/scale = 1.0
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ig7tw")
+
+[node name="Player" type="Node2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Background" type="TextureRect" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand_mode = 1
+
+[node name="Harry Timer" type="Timer" parent="UI"]
+wait_time = 1.001
+one_shot = true
+autostart = true
+
+[node name="transition" type="VideoStreamPlayer" parent="UI"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="forward button" type="Button" parent="UI/Control"]
+layout_mode = 0
+offset_left = 540.0
+offset_top = 415.0
+offset_right = 613.0
+offset_bottom = 446.0
+text = "Forward
+"
+
+[node name="backward button" type="Button" parent="UI/Control"]
+layout_mode = 0
+offset_left = 539.0
+offset_top = 541.0
+offset_right = 624.0
+offset_bottom = 572.0
+text = "Backward"
+
+[node name="turn left button" type="Button" parent="UI/Control"]
+layout_mode = 0
+offset_left = 455.0
+offset_top = 473.0
+offset_right = 530.0
+offset_bottom = 504.0
+text = "Turn left
+"
+
+[node name="turn right button" type="Button" parent="UI/Control"]
+layout_mode = 0
+offset_left = 620.0
+offset_top = 474.0
+offset_right = 706.0
+offset_bottom = 505.0
+text = "Turn right
+"
+
+[node name="Playbutton" type="Button" parent="UI"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "PLAY WITH HARRY?
+"
+
+[node name="RPScontainer" type="HBoxContainer" parent="UI"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -35.0
+offset_top = -20.0
+offset_right = 35.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Rock" type="Button" parent="UI/RPScontainer"]
+layout_mode = 2
+text = "Rock
+"
+
+[node name="Paper" type="Button" parent="UI/RPScontainer"]
+layout_mode = 2
+text = "Paper"
+
+[node name="Scissors" type="Button" parent="UI/RPScontainer"]
+layout_mode = 2
+text = "Scissors
+"
+
+[node name="Countdownlabel" type="Label" parent="UI"]
+visible = false
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.245241, 0.187845, 1)
+theme_override_colors/font_outline_color = Color(1, 0.519848, 0.989148, 1)
+theme_override_fonts/font = SubResource("FontFile_ig7tw")
+theme_override_font_sizes/font_size = 30
+
+[node name="Countdowntimer" type="Timer" parent="UI"]
+
+[node name="ResultSprite" type="TextureRect" parent="UI"]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+
+[node name="play again" type="Button" parent="UI"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Play Again"
+
+[node name="Result" type="Label" parent="UI"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -444.0
+offset_top = 75.0
+offset_right = -144.0
+offset_bottom = 165.0
+grow_horizontal = 2
+scale = Vector2(3, 3)
+uppercase = true
+
+[connection signal="pressed" from="UI/Control/forward button" to="." method="_on_forward_button_pressed"]
+[connection signal="pressed" from="UI/Control/backward button" to="." method="_on_backward_button_pressed"]
+[connection signal="pressed" from="UI/Control/turn left button" to="." method="_on_turn_left_button_pressed"]
+[connection signal="pressed" from="UI/Control/turn right button" to="." method="_on_turn_right_button_pressed"]
+[connection signal="pressed" from="UI/Playbutton" to="." method="_on_playbutton_pressed"]
+[connection signal="pressed" from="UI/RPScontainer/Rock" to="." method="_on_rock_pressed"]
+[connection signal="pressed" from="UI/RPScontainer/Paper" to="." method="_on_paper_pressed"]
+[connection signal="pressed" from="UI/RPScontainer/Scissors" to="." method="_on_scissors_pressed"]
+[connection signal="pressed" from="UI/play again" to="." method="_on_play_again_pressed"]

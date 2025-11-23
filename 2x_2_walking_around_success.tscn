@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://i86rdahkivqv"]
+
+[ext_resource type="Script" uid="uid://bk6wltw6ev0rx" path="res://2x_2_walking_around_success.gd" id="1_6mdky"]
+
+[node name="2x2 walking around success" type="Node2D"]
+script = ExtResource("1_6mdky")
